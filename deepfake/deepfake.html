@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepfake Detection & Management System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(
+    rgba(15,23,42,.9),
+    rgba(15,23,42,.9)
+    );
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:50px 8%;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.card h2{
+    color:#38bdf8;
+    font-size:35px;
+}
+
+.features{
+    padding:60px 8%;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.upload{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.upload-box{
+    border:2px dashed #38bdf8;
+    padding:50px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DeepShield AI</div>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Detection</a>
+        <a href="#">Reports</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Deepfake Detection & Management System</h1>
+        <p>
+            AI-powered platform to detect manipulated images,
+            videos, and audio content with high accuracy.
+        </p>
+
+        <button class="btn">Start Detection</button>
+    </div>
+</section>
+
+<section class="stats">
+
+<div class="card">
+    <h2>15,432</h2>
+    <p>Files Analyzed</p>
+</div>
+
+<div class="card">
+    <h2>97.8%</h2>
+    <p>Detection Accuracy</p>
+</div>
+
+<div class="card">
+    <h2>1,248</h2>
+    <p>Deepfakes Detected</p>
+</div>
+
+<div class="card">
+    <h2>24/7</h2>
+    <p>Monitoring</p>
+</div>
+
+</section>
+
+<section class="features">
+<h2 style="text-align:center;margin-bottom:30px;">
+System Features
+</h2>
+
+<div class="features-grid">
+
+<div class="feature">
+<h3>Image Analysis</h3>
+<p>Detect manipulated facial images using AI models.</p>
+</div>
+
+<div class="feature">
+<h3>Video Deepfake Detection</h3>
+<p>Frame-level analysis for synthetic video identification.</p>
+</div>
+
+<div class="feature">
+<h3>Audio Verification</h3>
+<p>Detect AI-generated and cloned voices.</p>
+</div>
+
+<div class="feature">
+<h3>Risk Scoring</h3>
+<p>Generate confidence scores and fraud indicators.</p>
+</div>
+
+<div class="feature">
+<h3>Automated Reports</h3>
+<p>Create detailed forensic analysis reports.</p>
+</div>
+
+<div class="feature">
+<h3>Real-Time Alerts</h3>
+<p>Instant notifications when suspicious media is detected.</p>
+</div>
+
+</div>
+</section>
+
+<section class="upload">
+<h2>Upload Media for Analysis</h2>
+
+<div class="upload-box">
+<input type="file" accept="image/*,video/*,audio/*">
+<br><br>
+<button class="btn">Analyze File</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 DeepShield AI - Deepfake Detection & Management System</p>
+</footer>
+
+</body>
+</html>
