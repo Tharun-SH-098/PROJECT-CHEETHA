@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Export Import Management System</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* Navbar */
+.navbar{
+    background:#0b2447;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1565891741441-64926e441838');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 30px;
+    background:#00b894;
+    color:white;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* Dashboard Cards */
+.section{
+    padding:70px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+    color:#0b2447;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#0984e3;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* Stats */
+.stats{
+    background:#0b2447;
+    color:white;
+    padding:60px 10%;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:45px;
+}
+
+.stat p{
+    font-size:18px;
+}
+
+/* Table */
+.table-section{
+    padding:70px 10%;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#0b2447;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+.status{
+    color:green;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background:#081b33;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+    font-size:38px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">EXIM System</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shipments</a>
+        <a href="#">Inventory</a>
+        <a href="#">Reports</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Export Import Management System</h1>
+        <p>Manage Global Trade, Shipments, Inventory & Documentation Efficiently</p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="section">
+    <h2 class="title">Core Modules</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fas fa-ship"></i>
+            <h3>Shipment Tracking</h3>
+            <p>Monitor international shipments in real time.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-boxes"></i>
+            <h3>Inventory Control</h3>
+            <p>Manage stock levels and warehouse operations.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-file-invoice"></i>
+            <h3>Documentation</h3>
+            <p>Handle customs, invoices and export documents.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Trade Analytics</h3>
+            <p>Generate reports and business insights instantly.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Statistics -->
+<section class="stats">
+    <div class="stats-container">
+
+        <div class="stat">
+            <h2>1250+</h2>
+            <p>Shipments</p>
+        </div>
+
+        <div class="stat">
+            <h2>85+</h2>
+            <p>Countries</p>
+        </div>
+
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Clients</p>
+        </div>
+
+        <div class="stat">
+            <h2>99%</h2>
+            <p>Success Rate</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Shipment Table -->
+<section class="table-section">
+    <h2 class="title">Recent Shipments</h2>
+
+    <table>
+        <tr>
+            <th>Shipment ID</th>
+            <th>Country</th>
+            <th>Product</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>EX001</td>
+            <td>USA</td>
+            <td>Electronics</td>
+            <td class="status">Delivered</td>
+        </tr>
+
+        <tr>
+            <td>EX002</td>
+            <td>Germany</td>
+            <td>Textiles</td>
+            <td class="status">In Transit</td>
+        </tr>
+
+        <tr>
+            <td>EX003</td>
+            <td>Japan</td>
+            <td>Automobile Parts</td>
+            <td class="status">Processing</td>
+        </tr>
+
+    </table>
+</section>
+
+<footer>
+    <p>© 2026 Export Import Management System | Global Trade Solutions</p>
+</footer>
+
+</body>
+</html>
