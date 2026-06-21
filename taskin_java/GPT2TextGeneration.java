@@ -31,4 +31,4 @@ public class GPT2TextGeneration {
 
         sc.close();
     }
-}
+}g
